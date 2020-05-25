@@ -1,15 +1,23 @@
 {
-  "name": "static-site",
+  "name": "readme-generator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaleighspurio/readme-generator.git"
+  },
+  "author": "Kaleigh Spurio",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kaleighspurio/readme-generator/issues"
+  },
+  "homepage": "https://github.com/Kaleighspurio/readme-generator#readme",
   "dependencies": {
-    "dotenv": "^8.0.0",
-    "inquirer": "^6.3.1"
+    "dotenv": "^8.2.0",
+    "inquirer": "^7.1.0"
   }
 }
