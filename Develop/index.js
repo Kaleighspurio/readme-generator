@@ -1,3 +1,7 @@
+const inquirer = require('inquirer');
+const dotenv = require('dotenv');
+
+
 const questions = [
 /*   
 This will be an array of questions.
