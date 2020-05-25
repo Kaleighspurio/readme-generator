@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const dotenv = require('dotenv');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 
 const questions = [
@@ -25,7 +26,7 @@ Questions - see below
 
 function writeToFile(fileName, data) {
     // where do I want the file placed? do I need to check?  use a relative path?
-    // create a file named fileName
+    // create a file named fileName:  const fileName = fs.writeFile?
     // write to file fileName the data
 
 }
