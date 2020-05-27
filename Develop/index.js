@@ -43,9 +43,10 @@ const questions = [
     message: "What is the usage for this project?",
   },
   {
-    type: "input",
+    type: "list",
     name: "license",
     message: "What is the license?",
+    choices: ["MIT", "Apache", "ISC", "GNU GPLv3", "None"]
   },
   {
     type: "input",

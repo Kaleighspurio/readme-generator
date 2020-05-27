@@ -1,27 +1,27 @@
 
-# This is the Title!
+# Readme generator
 ## Description
-as;ldkjfas;ldjf
+this makes readmes
 ## Table of Contents
-* Installation
-* License
-* Contributors
-* Tests
-* undefined
+ undefined
+ undefined
+ undefined
+ undefined
+ undefined
 ## Installation
-Just install it
+just install it
 ## Usage 
 just use it
 ## License
-none
+MIT
 ## Badges
 ![badge](https://img.shields.io/github/languages/top/Kaleighspurio/readme-generator)
 ## Contributors
-Kaleigh
+Kalegh
 ## Tests
 no tests!
 
 ### Contact
-![Github image](https://avatars0.githubusercontent.com/u/59545884?s=400&u=bc7c30d8d395ed840212cb90e570281b8a82e0f8&v=4)
+![Github image](NA)
 
 kaleighastell@gmail.com
