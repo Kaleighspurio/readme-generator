@@ -1,3 +1,4 @@
+const fs = require('fs');
 const inquirer = require("inquirer");
 const dotenv = require("dotenv");
 const generateMarkdown = require("./utils/generateMarkdown");
@@ -23,7 +24,6 @@ const questions = [
     name: "tableOfContents",
     message: "What would you like in your table of contents?",
     choices: [
-      "None",
       "Installation",
       "Usage",
       "License",
@@ -70,6 +70,10 @@ const questions = [
 
 function writeToFile(fileName, data) {
   // where do I want the file placed? do I need to check?  use a relative path?
+  fs.writeFile(fileName, generateMarkdown(data), (err) => {
+      if (err) throw err;
+      console.log("Your README has been created and saved!");
+  });
   // create a file named fileName:  const fileName = fs.writeFile?
   // write to file fileName the data
 }
@@ -80,16 +84,15 @@ function init() {
     .prompt(questions)
     .then((answers) => {
       console.log(answers);
-      generateMarkdown(answers);
-    //   writeToFile()
+      writeToFile('ReadMe.md', answers);
     })
-    .catch((error) => {
-      if (error.isTtyError) {
-        // prompt couldn't be rendered in current environment
-      } else {
-        // something else went wrong
-      }
-    });
+    // .catch((error) => {
+    //   if (error.isTtyError) {
+    //     // prompt couldn't be rendered in current environment
+    //   } else {
+    //     // something else went wrong
+    //   }
+    // });
 }
 
 init();
