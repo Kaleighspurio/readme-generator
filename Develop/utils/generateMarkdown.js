@@ -15,6 +15,8 @@ ${data.instructions}
 ${data.usage}
 ## License
 ${data.license}
+## Badges
+![badge](${data.badge})
 ## Contributors
 ${data.contributors}
 ## Tests
@@ -25,7 +27,6 @@ ${data.tests}
 
 ${data.email}
 `;
-
 }
 
 module.exports = generateMarkdown;

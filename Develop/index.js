@@ -3,6 +3,7 @@ const inquirer = require("inquirer");
 const dotenv = require("dotenv");
 const generateMarkdown = require("./utils/generateMarkdown");
 
+// Questions that the inquirer package will use to prompt the user on terminal
 const questions = [
   {
     type: "input",
@@ -74,12 +75,9 @@ function writeToFile(fileName, data) {
       if (err) throw err;
       console.log("Your README has been created and saved!");
   });
-  // create a file named fileName:  const fileName = fs.writeFile?
-  // write to file fileName the data
 }
 
 function init() {
-  // initialize stuff that I need here
   inquirer
     .prompt(questions)
     .then((answers) => {
