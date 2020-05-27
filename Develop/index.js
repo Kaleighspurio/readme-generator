@@ -4,24 +4,17 @@ const generateMarkdown = require('./utils/generateMarkdown');
 
 
 const questions = [
-/*   
-This will be an array of questions.
-
-The README will be populated with the following:
-
-At least one badge
-What is the Project title?
-What is the Description?
-What is the Table of Contents? [Array or an object]
-How to Install?
-What is the Usage?
-What is the License?
-Who are the Contributors? [array of contributors]
-What are your Tests?
-Questions - see below
-    What is your User GitHub profile picture? (image url?)
-    What is your User GitHub email?
-*/
+ "Do you want to add a badge?", 
+"What is your project title?", 
+"What is the description of your project?", 
+"what is in your table of contents?", 
+"What are the instrutions for install?", 
+"What is the usage for this project?", 
+"What are the licenses?", 
+"Who are the contributors for this project?", 
+"What are your tests?", 
+"What is your GitHub profile picture?",
+"What is your GitHub user email?"
 ];
 
 function writeToFile(fileName, data) {
