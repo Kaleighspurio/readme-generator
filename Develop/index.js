@@ -80,6 +80,8 @@ function init() {
     .prompt(questions)
     .then((answers) => {
       console.log(answers);
+      generateMarkdown(answers);
+    //   writeToFile()
     })
     .catch((error) => {
       if (error.isTtyError) {
