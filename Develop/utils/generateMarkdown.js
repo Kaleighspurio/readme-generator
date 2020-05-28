@@ -1,6 +1,8 @@
 function generateMarkdown(data) {
   return `
 # ${data.projectTitle}
+## Badges
+![badge](${data.badge})
 ## Description
 ${data.description}
 ## Table of Contents
@@ -15,8 +17,6 @@ ${data.instructions}
 ${data.usage}
 ## License
 ${data.license}
-## Badges
-![badge](${data.badge})
 ## Contributors
 ${data.contributors}
 ## Tests
