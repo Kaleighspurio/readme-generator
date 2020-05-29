@@ -1,27 +1,25 @@
 
-# Readme generator
+# Kaleighs project
+## Badges
+![badge](None)
 ## Description
-this makes readmes
+blah blah blah
 ## Table of Contents
- undefined
- undefined
- undefined
- undefined
- undefined
+Installation
+License
+Contributors
 ## Installation
-just install it
+There are no instructions
 ## Usage 
 just use it
 ## License
 MIT
-## Badges
-![badge](https://img.shields.io/github/languages/top/Kaleighspurio/readme-generator)
 ## Contributors
-Kalegh
+Kaleigh
 ## Tests
-no tests!
+No tests
 
 ### Contact
-![Github image](NA)
+![Github image](picture here)
 
 kaleighastell@gmail.com

@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require("fs");
 const inquirer = require("inquirer");
 const dotenv = require("dotenv");
 const generateMarkdown = require("./utils/generateMarkdown");
@@ -24,13 +24,7 @@ const questions = [
     type: "checkbox",
     name: "tableOfContents",
     message: "What would you like in your table of contents?",
-    choices: [
-      "Installation",
-      "Usage",
-      "License",
-      "Contributors",
-      "Tests",
-    ],
+    choices: ["Installation", "Usage", "License", "Contributors", "Tests"],
   },
   {
     type: "input",
@@ -46,7 +40,7 @@ const questions = [
     type: "list",
     name: "license",
     message: "What is the license?",
-    choices: ["MIT", "Apache", "ISC", "GNU GPLv3", "None"]
+    choices: ["MIT", "Apache", "ISC", "GNU GPLv3", "None"],
   },
   {
     type: "input",
@@ -73,25 +67,23 @@ const questions = [
 function writeToFile(fileName, data) {
   // where do I want the file placed? do I need to check?  use a relative path?
   fs.writeFile(fileName, generateMarkdown(data), (err) => {
-      if (err) throw err;
-      console.log("Your README has been created and saved!");
+    if (err) throw err;
+    console.log("Your README has been created and saved!");
   });
 }
 
 function init() {
-  inquirer
-    .prompt(questions)
-    .then((answers) => {
-      console.log(answers);
-      writeToFile('ReadMe.md', answers);
-    })
-    // .catch((error) => {
-    //   if (error.isTtyError) {
-    //     // prompt couldn't be rendered in current environment
-    //   } else {
-    //     // something else went wrong
-    //   }
-    // });
+  inquirer.prompt(questions).then((answers) => {
+    console.log(answers);
+    writeToFile("README.md", answers);
+  });
+  // .catch((error) => {
+  //   if (error.isTtyError) {
+  //     // prompt couldn't be rendered in current environment
+  //   } else {
+  //     // something else went wrong
+  //   }
+  // });
 }
 
 init();
