@@ -1,25 +1,25 @@
 
-# Kaleighs project
+# This is the Title
 ## Badges
-![badge](None)
+![badge](No)
 ## Description
-blah blah blah
+Description blah blah blah
 ## Table of Contents
-Installation
-License
-Contributors
+* Installation
+* Usage
+* Contributors
 ## Installation
-There are no instructions
+There are no instructions!
 ## Usage 
-just use it
+Just use it
 ## License
 MIT
 ## Contributors
 Kaleigh
 ## Tests
-No tests
+no tests
 
 ### Contact
-![Github image](picture here)
+![Github image](sdf)
 
 kaleighastell@gmail.com

@@ -1,6 +1,10 @@
 function generateMarkdown(data) {
-  const contents = data.tableOfContents.join("\n");
   
+for (let i = 0; i < data.tableOfContents.length; i++){
+  data.tableOfContents[i]= "* " + data.tableOfContents[i];
+}
+
+const contents = data.tableOfContents.join("\n");
   return `
 # ${data.projectTitle}
 ## Badges
