@@ -8,7 +8,7 @@ const questions = [
   {
     type: "input",
     name: "badge",
-    message: "Do you want to add a badge? Enter it here.",
+    message: "Do you want to add a badge? Enter the badge URL here.",
   },
   {
     type: "input",
@@ -23,7 +23,7 @@ const questions = [
   {
     type: "checkbox",
     name: "tableOfContents",
-    message: "What would you like in your table of contents?",
+    message: "What would you like to include in your table of contents?",
     choices: ["Installation", "Usage", "License", "Contributors", "Tests"],
   },
   {
@@ -50,7 +50,7 @@ const questions = [
   {
     type: "input",
     name: "tests",
-    message: "What are your tests?",
+    message: "Are there tests for this project? How do you run the tests?",
   },
   {
     type: "input",
@@ -60,7 +60,7 @@ const questions = [
   {
     type: "input",
     name: "email",
-    message: "What is your Github user email?",
+    message: "Contact info: What is your Github user email?",
   },
 ];
 
@@ -77,13 +77,6 @@ function init() {
     console.log(answers);
     writeToFile("README.md", answers);
   });
-  // .catch((error) => {
-  //   if (error.isTtyError) {
-  //     // prompt couldn't be rendered in current environment
-  //   } else {
-  //     // something else went wrong
-  //   }
-  // });
 }
 
 init();
