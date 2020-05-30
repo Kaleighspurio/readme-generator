@@ -7,9 +7,11 @@ To use this application, you must install the dependencies by running `npm insta
 
 After answering the prompts, the markdown file is created within the application's folder and the user may move it to the appropriate folder/repository.
 
-## Screenshots
+### Screenshots
 ![inquirer prompts](Develop/images/inquirer-prompts.png)
 
 ![object of inquirer responses](Develop/images/inquirer-object.png)
 
 ![generated readme file](Develop/images/generated-readme.png)
+
+![generated readme file preview](https://media.giphy.com/media/choHtrnc5Cp4DiTIRc/giphy.gif)
