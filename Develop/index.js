@@ -64,14 +64,15 @@ const questions = [
   },
 ];
 
+// This creates and writes a readme file by calling the generateMarkdown function and using that as the markdown in the created file. 
 function writeToFile(fileName, data) {
-  // where do I want the file placed? do I need to check?  use a relative path?
   fs.writeFile(fileName, generateMarkdown(data), (err) => {
     if (err) throw err;
     console.log("Your README has been created and saved!");
   });
 }
 
+// This function uses inquirer to prompt the user the questions from the questions array in the terminal command line
 function init() {
   inquirer.prompt(questions).then((answers) => {
     console.log(answers);
