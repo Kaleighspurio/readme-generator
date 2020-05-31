@@ -1,7 +1,7 @@
 function generateMarkdown(data) {
   // This will insert an asterisk in front of each item in the tableOfContents array
 for (let i = 0; i < data.tableOfContents.length; i++){
-  data.tableOfContents[i]= "* " + data.tableOfContents[i];
+  data.tableOfContents[i]= `* [${data.tableOfContents[i]}](##${data.tableOfContents[i]})`;
 }
 // This will make each item of the tableOfContents array be on a new line and sets it to the contents variable.
 const contents = data.tableOfContents.join("\n");
