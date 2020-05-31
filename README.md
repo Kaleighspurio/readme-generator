@@ -12,6 +12,6 @@ After answering the prompts, the markdown file is created within the application
 
 ![object of inquirer responses](Develop/images/inquirer-object.png)
 
-![generated readme file](Develop/images/generated-readme.png)
+![generated readme file](Develop/images/generated-readme-pic.png)
 
-![generated readme file preview](https://media.giphy.com/media/choHtrnc5Cp4DiTIRc/giphy.gif)
+![generated readme file preview](https://media.giphy.com/media/S8SYVd8lxe1bFqJd8L/giphy.gif)
